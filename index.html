@@ -69,13 +69,19 @@
       h1 {
         font-size: 36px;
         font-weight: bold;
-        margin: 30px 0;
+        margin: 0 0 10px 0;
       }
 
       span#tagLine {
-        font-size: 26px;
+        font-size: 24px;
         font-weight: bold;
-        margin: 30px 0;
+        margin: 10px 0;
+      }
+
+      h2 {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
       }
 
       h3 {
@@ -91,14 +97,16 @@
         margin: 10px 0;
       }
 
-      #contentContainer {
-        width: 960px;
-        margin-top: 0;
-        margin-left: auto;
-        margin-right: auto;
+      #titleBar {
+        background-color: #efefef;
       }
 
-      #contentSection {
+      #contentContainer {
+        width: 960px;
+        margin: 0 auto;
+      }
+
+      .contentSection {
           padding: 0 10px;
       }
 
@@ -127,24 +135,37 @@
       li {
         padding: 3px 0;
       }
+
+      #exampleWork {
+        font-style: italic;
+        font-size: .9em;
+        color: #666;
+      }
+
+      #descriptionText {
+        font-size: 1.1em;
+        margin-top: 40px;
+        text-align: center;
+      }
     </style>
 </head>
 <body>
   <div id="contentContainer">
-    <div id="contentSection" style="padding: 10px 20px;">
-      <h1 style="margin-top: 0; margin-bottom: 15px;">Bizzin'</h1>
+    <div id="titleBar" style="padding: 10px 20px;">
+      <h1>Bizzin'</h1>
       <span id="tagLine">Stay on top of your side jobs.</span>
     </div>
-    <hr>
-    <div id="contentSection" style="padding: 0 20px;">
-      <img src="bizzin_screens/job_banner_color.jpg" width="920" style="border: 0; border-radius: 0; margin-top:40px;"/>
-      <h3 style="margin: 20px 0 40px 0;">
+
+    <div class="contentSection" style="padding: 0 20px;">
+      <img src="bizzin_screens/job_banner_color.jpg" width="920" style="border: 0; border-radius: 0; margin-top:65px;"/>
+      <h2 style="margin: 20px 0 40px 0;">
         Bizzin' is for everyday people who need a simple way to track their side job income.
-      </h3>
-      <p style="margin-top: 40px; text-align: center;">Bizzin' is the only app designed for the side jobber.<br>If you have employees, run a retail operation, or have a corporate jet - Bizzin' is probably not for you.</p>
-      <p style="text-align: center;">Ideal for: Baby Sitters, Dog Walkers, Tutors, Music Teachers, Musicians, Personal Trainers, Photographers, Stylists, Cleaners, Handymen, Landscapers, and many others!</p>
+      </h2>
+      <p id="descriptionText">Bizzin' is the only app designed for the side jobber.<br>If you have employees, run a retail operation, or have a corporate jet - Bizzin' is probably not for you.</p>
+      <p id="exampleWork" style="text-align: center;">Great for Baby Sitters, Dog Walkers, Tutors, Music Teachers, Musicians, Personal Trainers, Photographers, Stylists, Cleaners, Handymen, Landscapers, and many others!</p>
     </div>
-    <div id="contentSection" style="margin-top: 70px;">
+
+    <div class="contentSection" style="margin-top: 65px;">
       <h3>It's faster and easier than a spreadsheet or even a notebook!</h3>
       <div class="imageSection" style="width: 550px; float: left; background-color: #EEE">
         <p>Simply enter basic information about the work you do and payments you collect.</p>
@@ -163,9 +184,7 @@
       <div style="clear: both;"></div>
     </div>
 
-
-
-    <div id="contentSection">
+    <div class="contentSection">
       <h3>But wait... there's more!</h3>
 
       <div class="imageSection" style="width: 45%; float: left; padding: 0">
