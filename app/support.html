@@ -102,6 +102,7 @@
 
       #titleBar {
         background-color: #efefef;
+        align: center;
       }
 
       #contentContainer {
@@ -109,23 +110,42 @@
         margin: 0 auto;
       }
 
+      p.tip {
+        font-size: .8em;
+        color: #666;
+        font-style: italic;
+      }
+
     </style>
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-86745533-1', 'auto');
-      ga('send', 'pageview');
+      // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      // })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      //
+      // ga('create', 'UA-86745533-1', 'auto');
+      // ga('send', 'pageview');
 
     </script>
 </head>
 <body>
-  <div id="contentContainer">
+  <div id="contentContainer" style="text-align: center;">
     <div id="titleBar" style="padding: 10px 20px;">
-      <image src="bizzin_screens/logo_color.png" width="360px" style="border: none"/>
-      <p id="tagLine">Stay on top of your side jobs.</p>
+      <image src="../bizzin_screens/logo_color.png" width="360px" style="border: none"/>
     </div>
+      <h1>Contact Support</h1>
+      <p style="width: 60%; margin: 0 auto;">We're always happy to receive feedback and answer any questions you might have.  Reach out to us anytime.  We read everything we get.</p>
+      <p class="tip">Tip: The in-app FAQ contains answers to many common questions.</p>
+      <ul>
+        <li>
+          <a href="mailto:support@bizzinapp.com?subject=Feedback/Questions">Email Us</a>
+        </li>
+        <li>
+          or
+        </li>
+        <li>
+          <a href="https://twitter.com/intent/tweet?screen_name=BizzinApp" class="twitter-mention-button" data-show-count="false">Tweet to @BizzinApp</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </li>
+      </ul>
     </div>
 </body>
