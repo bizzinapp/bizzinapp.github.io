@@ -1,162 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Bizzin' - Stay on top of your side jobs.</title>
-    <style>
 
-      html, body, div, span, applet, object, iframe,
-      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-      a, abbr, acronym, address, big, cite, code,
-      del, dfn, em, img, ins, kbd, q, s, samp,
-      small, strike, strong, sub, sup, tt, var,
-      b, u, i, center,
-      dl, dt, dd, ol, ul, li,
-      fieldset, form, label, legend,
-      table, caption, tbody, tfoot, thead, tr, th, td,
-      article, aside, canvas, details, embed,
-      figure, figcaption, footer, header, hgroup,
-      menu, nav, output, ruby, section, summary,
-      time, mark, audio, video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-      }
-      /* HTML5 display-role reset for older browsers */
-      article, aside, details, figcaption, figure,
-      footer, header, hgroup, menu, nav, section {
-        display: block;
-      }
-      body {
-        line-height: 1;
-      }
-      ol, ul {
-        list-style: none;
-      }
-      blockquote, q {
-        quotes: none;
-      }
-      blockquote:before, blockquote:after,
-      q:before, q:after {
-        content: '';
-        content: none;
-      }
-      table {
-        border-collapse: collapse;
-        border-spacing: 0;
-      }
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-      body {
-        font-family: helvetica;
-        line-height: 1.5;
-        color: #222;
-      }
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
 
-      b {
-        font-style: bold;
-      }
-
-      p {
-        margin: 1.5em 0;
-        padding: 0 30px;
-      }
-
-      .imageSection p {
-          padding: 0;
-      }
-
-      h1 {
-        font-size: 36px;
-        font-weight: bold;
-        margin: 0 0 10px 0;
-      }
-
-      p#tagLine {
-        font-size: 24px;
-        font-weight: bold;
-        margin: 10px 0;
-        padding: 0 0 0 12px;
-      }
-
-      h2 {
-        font-size: 32px;
-        font-weight: bold;
-        text-align: center;
-      }
-
-      h3 {
-        font-size: 23px;
-        font-weight: bold;
-        margin: 30px 0 20px 0;
-        text-align: center;
-      }
-
-      h4 {
-        text-align: center;
-        font-weight: bold;
-        margin: 10px 0;
-      }
-
-      #titleBar {
-        background-color: #efefef;
-      }
-
-      #contentContainer {
-        width: 960px;
-        margin: 0 auto;
-      }
-
-      .contentSection {
-          padding: 0 10px;
-      }
-
-      .imageContainer {
-        margin: 0 auto;
-      }
-
-      img {
-        border: 2px solid #777;
-        border-radius: 5px;
-      }
-
-
-      .imageSection {
-        text-align: center;
-        padding: 5px;
-        border-radius: 10px;
-        margin-bottom: 30px;
-      }
-
-      ul {
-        margin-left: 10px;
-        list-style-type: disc;
-      }
-
-      li {
-        padding: 3px 0;
-      }
-
-      #exampleWork {
-        font-style: italic;
-        font-size: 14px;
-        text-align: center;
-        margin-top: 35px;
-        color: #666;
-      }
-
-      #descriptionText {
-        font-size: 1.1em;
-        margin: 30px 0;
-        text-align: center;
-      }
-
-      #descriptionText p {
-        margin: 10px 0;
-      }
-    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <script>
+
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -165,87 +33,99 @@
       ga('create', 'UA-86745533-1', 'auto');
       ga('send', 'pageview');
 
+      function handleOutboundLinkClicks(event) {
+        ga('send', 'event', {
+          eventCategory: 'Outbound Link',
+          eventAction: 'click',
+          eventLabel: event.target.href,
+          eventValue: 1
+        });
+        return true;
+      }
     </script>
+
 </head>
+
 <body>
-  <div id="contentContainer">
-    <div id="titleBar" style="padding: 10px 20px;">
-      <image src="bizzin_screens/logo_color.png" width="360px" style="border: none"/>
-      <p id="tagLine">Stay on top of your side jobs.</p>
+
+
+  <div class="container" style="position: relative">
+  <a href="mailto:support@bizzinapp.com" id="contactLink">Contact Us</a>
+  <div class="jumbotron text-center">
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="heroScreenshot"></div>
+      </div>
+      <div class="col-sm-7">
+        <div class="fullLogoImage"></div>
+        <h2 class="tagline">Stay on top of your side jobs.</h2>
+        <div class="heroScreenshotCel"></div>
+        <p class="freeTrialText">No risk.  30 day FREE trial.</p>
+        <a class="appStoreButton large" href="https://itunes.apple.com/app/apple-store/id1151528377?pt=118387590&ct=hmpg&mt=8" onclick="handleOutboundLinkClicks(event)" target="new"></a>
+      </div>
     </div>
+  </div>
 
-    <div class="contentSection" style="padding: 0 20px;">
-      <img src="bizzin_screens/job_banner_color.jpg" width="920" style="border: 0; border-radius: 0; margin-top:65px;"/>
-      <h2 style="margin: 40px 0 25px 0;">
-        Bizzin' is the simple way to track your side job income.
-      </h2>
-      <div id="descriptionText">
-        <p>
-          Bizzin' is the only app designed from the ground up to let side jobbers track their income literally in seconds.
-        </p>
-        <p>
-          Bizzin' is a simple app for simple businesses.  If you have employees, run a retail operation, or have a corporate jet - Bizzin' is probably not for you.
-        </p>
+  <div class="container">
+    <h3>Easier than a notebook, simpler than a spreadsheet.<br>More powerful than both.</h3>
+    <p class="centeredText">Bizzin' makes tracking income from side jobs as simple as possible. Stop wrestling with clunky tools and be prepared for your clients, your accountant, and yourself!</p>
+    <div class="row exampleJobsRow">
+      <div class="col-xs-6 col-sm-3">
+        <div class="exampleJobImage carpenterImage"></div>
       </div>
-      <p id="exampleWork" style="text-align: center;">Great for Baby Sitters, Dog Walkers, Tutors, Music Teachers, Musicians, Personal Trainers, Photographers, Stylists, Cleaners, Handymen, Landscapers, and many others!</p>
+      <div class="col-xs-6 col-sm-3">
+        <div class="exampleJobImage fitnessImage"></div>
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <div class="exampleJobImage guitarImage"></div>
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <div class="exampleJobImage photographerImage"></div>
+      </div>
     </div>
-
-    <div class="contentSection" style="margin-top: 65px;">
-      <h3>It's faster and easier than a spreadsheet or even a notebook!</h3>
-      <div class="imageSection" style="width: 550px; float: left; background-color: #EEE; padding-bottom: 20px;">
-        <p>Simply enter basic information about the work you do and payments you collect.</p>
-        <div>
-          <a href="bizzin_screens/IMG_0059.PNG" style="margin-right: 40px;"><img src="bizzin_screens/IMG_0059.PNG" width="180"></a>
-          <a href="bizzin_screens/IMG_0054.PNG"><img src="bizzin_screens/IMG_0054.PNG" width="180"></a>
-        </div>
-      </div>
-      <div class="imageSection" style="float: right; margin-left: 2px;">
-          <p>Bizzin' keeps a running balance for each client.<br><br></p>
-          <div style="margin: 0 auto; width: 180px;">
-            <a href="bizzin_screens/IMG_0048.PNG"><img src="bizzin_screens/IMG_0048.PNG" width="180"></a>
-          </div>
-      </div>
-      <div style="clear: both;"></div>
-    </div>
-
-    <div class="contentSection">
-      <h3>You also get quite a bit more...</h3>
-
-      <div class="imageSection" style="width: 45%; float: left; padding: 0">
-        <h4>Peace of Mind</h4>Know your business - see who owes you and how much you have been paid over time.</p>
-        <div>
-          <a href="bizzin_screens/IMG_0058.PNG"><img src="bizzin_screens/IMG_0058.PNG" width="180"></a>
-          <a href="bizzin_screens/IMG_0051.PNG"><img src="bizzin_screens/IMG_0051.PNG" width="180" style="margin-left: 8px;"></a>
-        </div>
-      </div>
-
-      <div class="imageSection" style="width: 45%; float: right; padding: 0">
-        <h4>Be professional</h4>Tap a button to send customized PDF balance summaries and payment receipts.</p>
-        <div>
-          <a href="bizzin_screens/IMG_0057.PNG"><img src="bizzin_screens/IMG_0057.PNG" width="200"></a>
-          <a href="bizzin_screens/IMG_0056.PNG"><img src="bizzin_screens/IMG_0056.PNG" width="200" style="margin-left: 8px;"></a>
-        </div>
-      </div>
-      <div style="clear: both"></div>
-
-      <div class="imageSection" style="float: left; width: 45%; text-align: left; padding: 0">
-        <h4>Manage Clients</h4>
+    <p class="centeredText">Great for Baby Sitters, Dog Walkers, Tutors, Music Teachers, Musicians, Personal Trainers, Photographers, Stylists, Cleaners, Handymen, Landscapers, and many others.</p>
+    <a class="appStoreButton" href="https://itunes.apple.com/app/apple-store/id1151528377?pt=118387590&ct=hmpg&mt=8" onclick="handleOutboundLinkClicks(event)" target="new"></a>
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>Peace of Mind</h4>
         <ul>
-          <li>Your client contact info all in one place</li>
-          <li>Easily call, email, or get directions to your clients</li>
-          <li>Keep notes for each client</li>
+          <li>Know who owes you and what you've been paid.</li>
         </ul>
       </div>
-
-      <div class="imageSection" style="float: right; width: 45%; text-align: left; padding: 0">
+      <div class="col-sm-6">
+        <h4>Professional Communications</h4>
+        <ul>
+          <li>Send customized PDF balance summaries and payment receipts in seconds.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>Client Management</h4>
+        <ul>
+          <li>Your client contact info all in one place.</li>
+          <li>Easily call, email, or get directions.</li>
+          <li>Keep notes for each client.</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
         <h4>Backup, Privacy, and Security</h4>
         <ul>
-          <li>Lock Bizzin' with your PIN or Touch ID</li>
-          <li>Extreme privacy - data is stored on your device</li>
-          <li>Data is encrypted using the maximum strength encryption supported by your device</li>
-          <li>Easily back up your data using iTunes or iCloud</li>
-          <li>Export your data to CSV</li>
+          <li>Lock Bizzin' with a PIN or Touch ID.</li>
+          <li>Maximum privacy - data is stored on your device.</li>
+          <li>Easily back up your data using iTunes or iCloud.</li>
+          <li>Data is encrypted using the maximum strength encryption supported by your device.</li>
+          <li>Export data in CSV format.</li>
         </ul>
       </div>
     </div>
+    <a class="appStoreButton" href="https://itunes.apple.com/app/apple-store/id1151528377?pt=118387590&ct=hmpg&mt=8" onclick="handleOutboundLinkClicks(event)" target="new"></a>
+  </div>
+  <hr>
+  <div class="container legalLinks">
+    <a href="app/terms.html" style="margin-right: 40px">Terms of Use</a><a href="app/privacy.html">Privacy Policy</a></span><br/><br/>
+  </div>
+</div>
+
 </body>
+</html>
