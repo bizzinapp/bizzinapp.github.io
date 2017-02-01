@@ -14,6 +14,13 @@ a#contactLink {
   top: -1.5em;
 }
 
+p.freeTrialText {
+  color: #2e8856;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 20px 0 10px 0;
+}
+
 .exampleJobsRow {
   margin: 50px 0;
 }
@@ -97,7 +104,7 @@ div.heroScreenshotCel {
 a.appStoreButton.large {
   width: 189px;
   height: 56px;
-  margin: 50px auto;
+  margin: 5px auto;
 }
 
 a.appStoreButton {
@@ -166,26 +173,13 @@ p.centeredText {
     height: 100px;
     margin: 110px auto 0 auto;
   }
-}
+/*}
 
-@media(max-width:992px) {
-
-  div.heroScreenshot {
-    display: none;
-  }
-
-  div.heroScreenshotCel {
-    display: block;
-  }
-
-  div.fullLogoImage {
-    width: 275px;
-    height: 75px;
-    margin: 0 auto;
-  }
+/* iPad */
+/*@media(max-width:1024px) {*/
 
   h2.tagline {
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
 
   body {
@@ -210,7 +204,30 @@ p.centeredText {
 
 }
 
-@media(max-width:668px) {
+/*iPhone 6 landscape and phone layout cutoff*/
+@media(max-width:767px) {
+
+  .container .jumbotron {
+    padding-bottom: 15px;
+  }
+
+  div.fullLogoImage {
+    width: 300px;
+    height: 82px;
+    margin: 0 auto;
+  }
+
+  h2.tagline {
+    font-size: 1.6em;
+  }
+
+  div.heroScreenshot {
+    display: none;
+  }
+
+  div.heroScreenshotCel {
+    display: block;
+  }
 
   .exampleJobImage {
     margin: 10px auto;
@@ -223,7 +240,17 @@ p.centeredText {
 
 /*iPhone 6 Plus*/
 @media(max-width:414px) {
+  ul {
+    padding-left: 20px;
+  }
 
+  p.centeredText {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 1.9em;
+  }
 }
 
 /*iPhone 6*/
@@ -234,13 +261,14 @@ p.centeredText {
     margin: 15px auto;
   }
 
+  h3 {
+    font-size: 1.7em;
+  }
+
   div.appStoreButtonLarge {
     margin: 20px auto 15px auto;
   }
 
-  .container .jumbotron {
-    padding-bottom: 15px;
-  }
 }
 
 /*iPhone 5*/
@@ -266,7 +294,7 @@ p.centeredText {
   }
 
   h2.tagline {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 
   h3{
@@ -274,13 +302,13 @@ p.centeredText {
   }
 
   div.fullLogoImage {
-    width: 221px;
-    height: 60px;
+    width: 250px;
+    height: 68px;
   }
 
   div.heroScreenshotCel {
     width: 135px;
     height: 270px;
-    margin: 15px auto;
+    margin: 15px auto 20px auto;
   }
 }
