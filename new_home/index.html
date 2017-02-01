@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bizzin' - Stay on top of your side business.</title>
+    <title>Bizzin' - Stay on top of your side jobs.</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -23,6 +23,25 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script>
+
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-86745533-1', 'auto');
+      ga('send', 'pageview');
+
+      function handleOutboundLinkClicks(event) {
+        ga('send', 'event', {
+          eventCategory: 'Outbound Link',
+          eventAction: 'click',
+          eventLabel: event.target.href
+        });
+        return true;
+      }
+    </script>
 
 </head>
 
@@ -38,16 +57,16 @@
       </div>
       <div class="col-md-7">
         <div class="fullLogoImage"></div>
-        <h2 class="tagline">Stay on top of your side business.</h2>
+        <h2 class="tagline">Stay on top of your side jobs.</h2>
         <div class="heroScreenshotCel"></div>
-        <div class="appStoreButtonLarge"></div>
+        <a class="appStoreButton large" href="https://itunes.apple.com/app/apple-store/id1151528377?pt=118387590&ct=hmpg&mt=8" onclick="handleOutboundLinkClicks(event)" target="new"></a
       </div>
     </div>
   </div>
 
   <div class="container">
-    <h3>Bizzin' is the simple way to track your side business.</h3>
-    <p class="centeredText">Bizzin' is a simple app for simple businesses. If you have a complex invoicing workflow, run a retail operation, or have a corporate jet - Bizzin' is probably not for you.</p>
+    <h3>Easier than a notebook, simpler than a spreadsheet.<br>More powerful than both.</h3>
+    <p class="centeredText">Bizzin' makes tracking side jobs as simple as possible. Stop wrestling with clunky tools and be prepared for your clients, your accountant, and yourself!</p>
     <div class="row exampleJobsRow">
       <div class="col-xs-6 col-sm-3">
         <div class="exampleJobImage carpenterImage"></div>
@@ -62,24 +81,8 @@
         <div class="exampleJobImage photographerImage"></div>
       </div>
     </div>
-    <!-- <div class="row exampleJobsRowSmall">
-      <div class="col-xs-6">
-        <div class="exampleJobImage carpenterImage"></div>
-      </div>
-      <div class="col-xs-6">
-        <div class="exampleJobImage fitnessImage"></div>
-      </div>
-    </div>
-    <div class="row exampleJobsRowSmall">
-      <div class="col-xs-6">
-        <div class="exampleJobImage guitarImage"></div>
-      </div>
-      <div class="col-xs-6">
-        <div class="exampleJobImage photographerImage"></div>
-      </div>
-    </div> -->
-    <p class="centeredText">Great for Baby Sitters, Dog Walkers, Tutors, Music Teachers, Musicians, Personal Trainers, Photographers, Stylists, Cleaners, Handymen, Landscapers, and many others!</p>
-    <div class="appStoreButton"></div>
+    <p class="centeredText">Great for Baby Sitters, Dog Walkers, Tutors, Music Teachers, Musicians, Personal Trainers, Photographers, Stylists, Cleaners, Handymen, Landscapers, and many others.</p>
+    <a class="appStoreButton" href="https://itunes.apple.com/app/apple-store/id1151528377?pt=118387590&ct=hmpg&mt=8"></a>
     <div class="row">
       <div class="col-sm-6">
         <h4>Peace of Mind</h4>
@@ -114,11 +117,11 @@
         </ul>
       </div>
     </div>
-    <div class="appStoreButton"></div>
+    <a class="appStoreButton" href="https://itunes.apple.com/app/apple-store/id1151528377?pt=118387590&ct=hmpg&mt=8"></a>
   </div>
   <hr>
   <div class="container legalLinks">
-    <a href="/app/terms.html" style="margin-right: 40px">Terms of Use</a><a href="/app/privacy.html">Privacy Policy</a></span><br/><br/>
+    <a href="app/terms.html" style="margin-right: 40px">Terms of Use</a><a href="app/privacy.html">Privacy Policy</a></span><br/><br/>
   </div>
 </div>
 

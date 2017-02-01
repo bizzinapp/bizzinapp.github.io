@@ -94,19 +94,13 @@ div.heroScreenshotCel {
   display: none;
 }
 
-div.appStoreButtonLarge {
-  background: url('../img/app_store_badge_135x40.svg') no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  align: center;
+a.appStoreButton.large {
   width: 189px;
   height: 56px;
   margin: 50px auto;
 }
 
-div.appStoreButton {
+a.appStoreButton {
   background: url('../img/app_store_badge_135x40.svg') no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -116,6 +110,8 @@ div.appStoreButton {
   width: 135px;
   height: 40px;
   margin: 40px auto;
+  cursor: pointer;
+  display: block;
 }
 
 
@@ -225,8 +221,30 @@ p.centeredText {
   }
 }
 
-@media(max-width:400px) {
+/*iPhone 6 Plus*/
+@media(max-width:414px) {
 
+}
+
+/*iPhone 6*/
+@media(max-width:375px) {
+  div.heroScreenshotCel {
+    width: 185px;
+    height: 370px;
+    margin: 15px auto;
+  }
+
+  div.appStoreButtonLarge {
+    margin: 20px auto 15px auto;
+  }
+
+  .container .jumbotron {
+    padding-bottom: 15px;
+  }
+}
+
+/*iPhone 5*/
+@media(max-width:320px) {
   body {
     margin-top: 20px;
   }
