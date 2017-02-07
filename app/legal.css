@@ -1,0 +1,34 @@
+.effectiveDate {
+  font-style: italic;
+  font-weight: bold;
+}
+span.inlineTitle {
+  text-decoration: underline;
+  padding-right: 1em;
+}
+
+.importantText {
+  font-weight: bold;
+}
+
+.indented {
+  padding-left: 1em;
+}
+
+.centered {
+  text-align: center;
+}
+
+@media(max-width: 414px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .indented {
+    padding-left: .5em;
+  }
+}
