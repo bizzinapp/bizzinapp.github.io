@@ -33,14 +33,25 @@
       ga('create', 'UA-86745533-1', 'auto');
       ga('send', 'pageview');
 
-      function handleOutboundLinkClicks(event) {
+      function getURLParameter(name) {
+        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+      }
+
+      function handleAppStoreButtonClicks(event) {
+
+        var urlCid = getURLParameter('cid')
+        var cid = (urlCid != null && urlCid != "") ? urlCid : 'hmpg'
+
+        var appStoreUrl = "https://itunes.apple.com/app/apple-store/id1151528377?pt=118387590&ct="+cid+"&mt=8"
+
         ga('send', 'event', {
           eventCategory: 'Outbound Link',
           eventAction: 'click',
-          eventLabel: event.target.href,
+          eventLabel: cid,
           eventValue: 1
         });
-        return true;
+
+        window.open(appStoreUrl)
       }
     </script>
 
@@ -61,7 +72,7 @@
         <h2 class="tagline">Stay on top of your side jobs.</h2>
         <div class="heroScreenshotCel"></div>
         <p class="freeTrialText">No risk.  30 day FREE trial.</p>
-        <a class="appStoreButton large" href="https://itunes.apple.com/app/apple-store/id1151528377?pt=118387590&ct=hmpg&mt=8" onclick="handleOutboundLinkClicks(event)" target="new"></a>
+        <a class="appStoreButton large" onclick="handleAppStoreButtonClicks(event)"></a>
       </div>
     </div>
   </div>
@@ -84,7 +95,7 @@
       </div>
     </div>
     <p class="centeredText">Great for Baby Sitters, Dog Walkers, Tutors, Music Teachers, Musicians, Personal Trainers, Photographers, Stylists, Cleaners, Handymen, Landscapers, and many others.</p>
-    <a class="appStoreButton" href="https://itunes.apple.com/app/apple-store/id1151528377?pt=118387590&ct=hmpg&mt=8" onclick="handleOutboundLinkClicks(event)" target="new"></a>
+    <a class="appStoreButton" onclick="handleAppStoreButtonClicks(event)"></a>
     <div class="row">
       <div class="col-sm-6">
         <h4>Peace of Mind</h4>
@@ -119,7 +130,7 @@
         </ul>
       </div>
     </div>
-    <a class="appStoreButton" href="https://itunes.apple.com/app/apple-store/id1151528377?pt=118387590&ct=hmpg&mt=8" onclick="handleOutboundLinkClicks(event)" target="new"></a>
+    <a class="appStoreButton" onclick="handleAppStoreButtonClicks(event)"></a>
   </div>
   <hr>
   <div class="container legalLinks">
